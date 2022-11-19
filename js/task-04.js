@@ -14,10 +14,9 @@ function onTargetButtonDecrement(event) {
   actionsValue.textContent = event.currentTarget.value;
 }
 
-function onTargetButtonIncrement(event) {
-  event.currentTarget.value += 1;
-  console.log(actionsValue.textContent);
-  actionsValue.textContent = event.currentTarget.value;
+function onTargetButtonIncrement() {
+  counterValue += 1;
+  actionsValue.textContent = counterValue;
 }
 
 decrementBtn.addEventListener("click", onTargetButtonDecrement);
