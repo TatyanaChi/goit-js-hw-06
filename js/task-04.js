@@ -9,9 +9,9 @@ console.log(decrementBtn.dataset.action);
 const incrementBtn = document.querySelector('button[data-action="increment"]');
 console.log(incrementBtn.dataset.action);
 
-function onTargetButtonDecrement(event) {
-  event.currentTarget.value -= 1;
-  actionsValue.textContent = event.currentTarget.value;
+function onTargetButtonDecrement() {
+  counterValue -= 1;
+  actionsValue.textContent = counterValue;
 }
 
 function onTargetButtonIncrement() {
